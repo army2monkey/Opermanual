@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#55131F" />
+  <title>Jim's Ops Manual</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <img src="logo.png" class="brand-logo" alt="Jim's Tick & Mosquito logo" />
+      <div><div class="brand">OPS MANUAL</div><div class="subtitle">Jim's Tick &amp; Mosquito</div></div>
+    </div>
+    <button id="headerSearch" class="icon-btn" aria-label="Search">⌕</button>
+  </header>
+  <main id="screen" class="screen"></main>
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <button data-tab="home" class="nav-btn active"><span>⌂</span><small>Home</small></button>
+    <button data-tab="sections" class="nav-btn"><span>☰</span><small>Sections</small></button>
+    <button data-tab="search" class="nav-btn"><span>⌕</span><small>Search</small></button>
+    <button data-tab="quick" class="nav-btn"><span>✓</span><small>Quick</small></button>
+    <button data-tab="more" class="nav-btn"><span>•••</span><small>More</small></button>
+  </nav>
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-head"><h2 id="modalTitle">Details</h2><button id="closeModal" class="icon-btn">×</button></div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <script src="manual_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

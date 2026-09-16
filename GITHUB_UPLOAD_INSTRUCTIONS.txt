@@ -1,0 +1,24 @@
+JIM'S TICK & MOSQUITO - OPS MANUAL APP
+GITHUB UPLOAD / APK BUILD
+
+1. Create a new GitHub repository.
+2. Extract this ZIP on your computer.
+3. Upload ALL extracted files/folders to the ROOT of the repository.
+   build.gradle, settings.gradle, app/, .github/, etc. should be visible at the repo root.
+4. Commit the files to the main branch.
+5. Open the repository's Actions tab.
+6. Open "Build Android APK".
+   - It should also run automatically after a push to main.
+   - Or choose Run workflow to start it manually.
+7. When the workflow finishes, open the completed run.
+8. Under Artifacts, download "Jims-Ops-Manual-debug-apk".
+9. Extract that downloaded artifact ZIP to get app-debug.apk.
+10. Transfer app-debug.apk to the Android phone and install it.
+
+PHONE TARGET
+Samsung SM-S948U1 / Android 16 / One UI 8.5
+
+NOTES
+- GitHub Actions builds the APK in the cloud; Android Studio is not required for this path.
+- The app is offline-first. Manual content and reference PDFs are bundled in the project.
+- GorillaDesk remains the official customer/application record system.
