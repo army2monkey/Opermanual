@@ -1,1 +1,3 @@
-<resources><string name="app_name">Jim's Ops Manual</string></resources>
+<resources>
+    <string name="app_name">Jim\'s Ops Manual</string>
+</resources>
