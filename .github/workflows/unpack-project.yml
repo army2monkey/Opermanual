@@ -26,9 +26,9 @@ jobs:
             echo "ZIP is already gone; nothing to unpack."
             exit 0
           fi
-          unzip -o "$ZIP" -d .
+          unzip -o "$ZIP" -d . -x '.github/workflows/*'
           rm -f "$ZIP"
-          rm -f .github/workflows/unpack-project.yml
+          rm -f TRIGGER_UNPACK.txt
           chmod +x gradlew || true
 
       - name: Commit unpacked project
